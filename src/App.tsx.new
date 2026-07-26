@@ -1,30 +1,17 @@
 import './App.css'
 
-const steps = [
+const procedureSteps = [
   {
     title: 'Send five pictures',
     text: 'One wide shot. One from the opposite side. One close view of the soil. One close view of the main problem or existing plants. One view showing shade, fences, trees, or exposure. Show the real patch. Do not clean it up for the photograph.',
   },
   {
     title: 'Fill out the garden chart',
-    text: 'A short garden chart, not a landscape-design interview. Give me USDA hardiness zone, sunlight, soil behavior, drainage, wind, watering, patch size, animals or wildlife, desired look, colors you like, colors you do not, maintenance tolerance, and seed budget.',
+    text: 'A short garden chart, not a landscape-design interview. Ask for USDA hardiness zone, sunlight, soil behavior, drainage, wind, watering, approximate patch size, animals or wildlife, desired look, colors liked, colors disliked, maintenance tolerance, and seed budget.',
   },
   {
     title: 'Receive five recommendations',
     text: 'You get five written seed recommendations, the reason for each, a basic sowing window, placement notes, and one caution. That is the service. I am not designing Monet’s garden for everybody.',
-  },
-]
-
-const services = [
-  {
-    title: 'Five-Picture Garden Read',
-    price: '$25',
-    details: ['One patch of ground', 'Five photographs', 'Five seed recommendations', 'Short explanation for each', 'Basic timing and placement notes'],
-  },
-  {
-    title: 'Garden Bed Field Plan',
-    price: '$50',
-    details: ['One defined bed or small garden area', 'Five primary seed recommendations', 'Arrangement notes', 'Color and bloom-sequence notes', 'A little more detail, not a complete landscape plan'],
   },
 ]
 
@@ -46,7 +33,16 @@ const intakeFields = [
   'Seed budget',
 ]
 
-const galleryItems = [
+const seedPacketFormat = [
+  'RECOMMENDATION',
+  'WHY',
+  'CONDITIONS',
+  'SOWING WINDOW',
+  'PLACEMENT',
+  'WATCH FOR',
+]
+
+const gardenPictures = [
   {
     title: 'Morning border after rain',
     alt: 'A damp garden border in early light with soft pink and white flowers',
@@ -90,7 +86,6 @@ function App() {
         <nav className="site-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#how-this-works">How This Works</a>
-          <a href="#services">Services</a>
           <a href="#seed-packets">Seed Packets</a>
           <a href="#garden-pictures">Garden Pictures</a>
           <a href="#boundaries">Boundaries</a>
@@ -173,7 +168,7 @@ function App() {
             <h2>Three steps. One patch at a time.</h2>
           </div>
           <div className="steps-grid">
-            {steps.map((step, index) => (
+            {procedureSteps.map((step, index) => (
               <article className="info-card" key={step.title}>
                 <span className="step-number">0{index + 1}</span>
                 <h3>{step.title}</h3>
@@ -189,29 +184,6 @@ function App() {
               want included. Photographs should focus on the garden patch only.
             </p>
           </div>
-        </section>
-
-        <section className="section" id="services">
-          <div className="section-heading">
-            <p className="eyebrow">Services</p>
-            <h2>The work is simple. The decisions are not.</h2>
-          </div>
-          <div className="services-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <div className="service-price">{service.price}</div>
-                <h3>{service.title}</h3>
-                <ul>
-                  {service.details.map((detail) => (
-                    <li key={detail}>{detail}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-          <p className="section-intro">
-            Seeds are not included. You choose, purchase, plant, and maintain everything yourself.
-          </p>
         </section>
 
         <section className="section" id="seed-packets">
@@ -240,12 +212,9 @@ function App() {
               <p>[One limitation, risk, or maintenance note]</p>
             </article>
             <div className="packet-format-list">
-              <div className="packet-format-item">RECOMMENDATION</div>
-              <div className="packet-format-item">WHY</div>
-              <div className="packet-format-item">CONDITIONS</div>
-              <div className="packet-format-item">SOWING WINDOW</div>
-              <div className="packet-format-item">PLACEMENT</div>
-              <div className="packet-format-item">WATCH FOR</div>
+              {seedPacketFormat.map((item) => (
+                <div className="packet-format-item" key={item}>{item}</div>
+              ))}
             </div>
           </div>
         </section>
@@ -256,7 +225,7 @@ function App() {
             <h2>Real gardens / not renderings.</h2>
           </div>
           <div className="gallery-grid">
-            {galleryItems.map((item) => (
+            {gardenPictures.map((item) => (
               <article className="gallery-card" key={item.title}>
                 <img src={item.image} alt={item.alt} />
                 <h3>{item.title}</h3>
