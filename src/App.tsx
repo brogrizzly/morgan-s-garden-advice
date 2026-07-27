@@ -1,4 +1,5 @@
 import './App.css'
+import { GardenStrip } from './components/GardenStrip'
 
 const steps = [
   {
@@ -62,21 +63,6 @@ const galleryItems = [
     alt: 'A garden bed with bees moving through purple and yellow flowers',
     image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80',
   },
-  {
-    title: 'A bed that needed another year',
-    alt: 'A full perennial bed with a patch of bare ground and early growth',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    title: 'Flowers versus coastal wind',
-    alt: 'A seaside garden with sturdy flowers and a weathered wooden fence',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    title: 'The goats are not allowed in here',
-    alt: 'A tidy garden edge with a low fence and clipped plants in front',
-    image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80',
-  },
 ]
 
 function App() {
@@ -85,13 +71,12 @@ function App() {
       <header className="site-header">
         <a className="brand" href="#hero">
           <span className="brand-block">Morgan S. Company</span>
-          <span className="brand-subtitle">Garden Picture Advice</span>
+          <span className="brand-subtitle">Software · Seeds · Systems</span>
         </a>
         <nav className="site-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#how-this-works">How This Works</a>
           <a href="#services">Services</a>
-          <a href="#seed-packets">Seed Packets</a>
           <a href="#garden-pictures">Garden Pictures</a>
           <a href="#boundaries">Boundaries</a>
           <a href="#contact">Contact</a>
@@ -114,12 +99,8 @@ function App() {
               This is not a full garden design. It is five useful decisions for one patch of ground.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href="#contact">
-                Send Five Pictures
-              </a>
-              <a className="button button-secondary" href="#how-this-works">
-                How This Works
-              </a>
+              <a className="button button-primary" href="#contact">Send Five Pictures</a>
+              <a className="button button-secondary" href="#how-this-works">How This Works</a>
             </div>
             <div className="field-note-strip" aria-label="Service summary">
               <span>INPUT / FIVE PICTURES</span>
@@ -138,32 +119,20 @@ function App() {
           </div>
         </section>
 
+        <GardenStrip />
+
         <section className="section" id="about">
           <div className="section-heading">
             <p className="eyebrow">About</p>
             <h2>Gardening is harder than it looks.</h2>
           </div>
           <div className="about-grid">
-            <p>
-              Sun shifts. Soil changes across the same yard. Slugs, deer, wind, rain, dogs, goats,
-              and ordinary human forgetfulness all get a vote.
-            </p>
-            <p>
-              I have moved plants that should have stayed put. I have waited years for things that
-              never bloomed. I have also watched an ugly patch turn into the best part of the yard.
-            </p>
-            <p>
-              That is the level of certainty available here. I will give you five recommendations
-              and explain my reasoning. You decide what to buy, what to plant, and whether any of it
-              makes sense for your garden.
-            </p>
+            <p>Sun shifts. Soil changes across the same yard. Slugs, deer, wind, rain, dogs, goats, and ordinary human forgetfulness all get a vote.</p>
+            <p>I have moved plants that should have stayed put. I have waited years for things that never bloomed. I have also watched an ugly patch turn into the best part of the yard.</p>
+            <p>That is the level of certainty available here. I will give you five recommendations and explain my reasoning. You decide what to buy, what to plant, and whether any of it makes sense for your garden.</p>
           </div>
           <div className="note-box">
-            <p>
-              Not every recommendation means buying more. Sometimes the right answer is to move
-              something, divide something, wait until fall, stop watering it so much, remove one
-              plant, or plant nothing yet.
-            </p>
+            <p>Not every recommendation means buying more. Sometimes the right answer is to move something, divide something, wait until fall, stop watering it so much, remove one plant, or plant nothing yet.</p>
           </div>
         </section>
 
@@ -183,11 +152,7 @@ function App() {
           </div>
           <div className="privacy-note">
             <p className="privacy-note-title">Photograph privacy</p>
-            <p>
-              Before sending pictures, check the background for house numbers, license plates,
-              faces, mail, documents, school names, neighboring homes, or anything else you do not
-              want included. Photographs should focus on the garden patch only.
-            </p>
+            <p>Before sending pictures, check the background for house numbers, license plates, faces, mail, documents, school names, neighboring homes, or anything else you do not want included. Photographs should focus on the garden patch only.</p>
           </div>
         </section>
 
@@ -202,16 +167,12 @@ function App() {
                 <div className="service-price">{service.price}</div>
                 <h3>{service.title}</h3>
                 <ul>
-                  {service.details.map((detail) => (
-                    <li key={detail}>{detail}</li>
-                  ))}
+                  {service.details.map((detail) => <li key={detail}>{detail}</li>)}
                 </ul>
               </article>
             ))}
           </div>
-          <p className="section-intro">
-            Seeds are not included. You choose, purchase, plant, and maintain everything yourself.
-          </p>
+          <p className="section-intro">Seeds are not included. You choose, purchase, plant, and maintain everything yourself.</p>
         </section>
 
         <section className="section" id="seed-packets">
@@ -219,25 +180,16 @@ function App() {
             <p className="eyebrow">Seed Packets</p>
             <h2>The five packets are personalized written recommendations.</h2>
           </div>
-          <p className="section-intro">
-            Physical seed packets are not included. Each recommendation is a written note with a
-            reason, a basic sowing window, placement notes, and one caution.
-          </p>
+          <p className="section-intro">Physical seed packets are not included. Each recommendation is a written note with a reason, a basic sowing window, placement notes, and one caution.</p>
           <div className="packet-grid">
             <article className="packet-card">
               <p className="packet-label">SEED PACKET / 01</p>
-              <h3>Recommendation</h3>
-              <p>[Seed or seed mix]</p>
-              <h3>Why</h3>
-              <p>[Why I think it belongs in this patch]</p>
-              <h3>Conditions</h3>
-              <p>[Light, moisture, and soil notes]</p>
-              <h3>Sowing window</h3>
-              <p>[When to consider planting]</p>
-              <h3>Placement</h3>
-              <p>[Where or how to group it]</p>
-              <h3>Watch for</h3>
-              <p>[One limitation, risk, or maintenance note]</p>
+              <h3>Recommendation</h3><p>[Seed or seed mix]</p>
+              <h3>Why</h3><p>[Why I think it belongs in this patch]</p>
+              <h3>Conditions</h3><p>[Light, moisture, and soil notes]</p>
+              <h3>Sowing window</h3><p>[When to consider planting]</p>
+              <h3>Placement</h3><p>[Where or how to group it]</p>
+              <h3>Watch for</h3><p>[One limitation, risk, or maintenance note]</p>
             </article>
             <div className="packet-format-list">
               <div className="packet-format-item">RECOMMENDATION</div>
@@ -271,42 +223,11 @@ function App() {
             <h2>What five pictures cannot tell me.</h2>
           </div>
           <div className="boundary-list">
-            <article>
-              <h3>Plant ID</h3>
-              <p>
-                I may not be able to identify an existing plant from a photograph. I will not guess
-                just to sound confident.
-              </p>
-            </article>
-            <article>
-              <h3>Plant health</h3>
-              <p>
-                Pictures cannot reliably prove disease, pests, soil chemistry, root damage,
-                chemical exposure, or drainage below the surface.
-              </p>
-            </article>
-            <article>
-              <h3>People and animals</h3>
-              <p>
-                I do not certify that a plant is safe for children, dogs, cats, goats, livestock,
-                or wildlife. Toxicity and safety must be checked independently through authoritative
-                sources.
-              </p>
-            </article>
-            <article>
-              <h3>Results</h3>
-              <p>
-                Weather, soil, watering, timing, wildlife, maintenance, and chance all affect what
-                happens next.
-              </p>
-            </article>
-            <article>
-              <h3>Responsibility</h3>
-              <p>
-                You choose the seeds. You buy them. You plant them. You care for them. Final
-                decisions remain yours.
-              </p>
-            </article>
+            <article><h3>Plant ID</h3><p>I may not be able to identify an existing plant from a photograph. I will not guess just to sound confident.</p></article>
+            <article><h3>Plant health</h3><p>Pictures cannot reliably prove disease, pests, soil chemistry, root damage, chemical exposure, or drainage below the surface.</p></article>
+            <article><h3>People and animals</h3><p>I do not certify that a plant is safe for children, dogs, cats, goats, livestock, or wildlife. Toxicity and safety must be checked independently through authoritative sources.</p></article>
+            <article><h3>Results</h3><p>Weather, soil, watering, timing, wildlife, maintenance, and chance all affect what happens next.</p></article>
+            <article><h3>Responsibility</h3><p>You choose the seeds. You buy them. You plant them. You care for them. Final decisions remain yours.</p></article>
           </div>
         </section>
 
@@ -316,18 +237,9 @@ function App() {
             <h2>I use experience, reference material, and tools. AI does not get the final say.</h2>
           </div>
           <div className="ai-box">
-            <p>
-              I use gardening experience, reference material, plant-identification tools, and
-              AI-assisted research to work faster and compare possibilities.
-            </p>
-            <p>
-              AI does not get the final say. I review the recommendations before they leave my desk.
-            </p>
-            <p>
-              Your pictures and notes are used to prepare the advice you asked for. Morgan S.
-              Company does not sell customer information, build advertising profiles, or use
-              submissions for marketing.
-            </p>
+            <p>I use gardening experience, reference material, plant-identification tools, and AI-assisted research to work faster and compare possibilities.</p>
+            <p>AI does not get the final say. I review the recommendations before they leave my desk.</p>
+            <p>Your pictures and notes are used to prepare the advice you asked for. Morgan S. Company does not sell customer information, build advertising profiles, or use submissions for marketing.</p>
           </div>
         </section>
 
@@ -340,19 +252,12 @@ function App() {
             <p>Five pictures. A short garden chart. Five recommendations back.</p>
             <div className="intake-card">
               <h3>Minimum intake</h3>
-              <p>
-                Do not send your address. Your USDA hardiness zone and the conditions visible in the
-                photographs are enough for this service.
-              </p>
+              <p>Do not send your address. Your USDA hardiness zone and the conditions visible in the photographs are enough for this service.</p>
               <ul className="intake-list">
-                {intakeFields.map((field) => (
-                  <li key={field}>{field}</li>
-                ))}
+                {intakeFields.map((field) => <li key={field}>{field}</li>)}
               </ul>
             </div>
-            <div className="note-box muted">
-              <p>Submission system is being prepared.</p>
-            </div>
+            <div className="note-box muted"><p>Submission system is being prepared.</p></div>
           </div>
         </section>
       </main>
@@ -360,9 +265,15 @@ function App() {
       <footer className="site-footer">
         <div>
           <strong>Morgan S. Company</strong>
-          <p>Garden Picture Advice</p>
+          <p>Software · Seeds · Systems</p>
         </div>
-        <p>Five pictures in. Five seed packets out.</p>
+        <div className="footer-links">
+          <a href="#hero">Built with G4LO</a>
+          <a href="#ai-tools">Tool acknowledgments</a>
+        </div>
+        <p className="acknowledgment">
+          With sincere gratitude to the open-source software and AI communities, especially the people who share code, research, documentation, and models such as Qwen. ChatGPT and Codex from OpenAI, Google AI tools, Visual Studio Code, GitHub, and open-source models have been valuable development tools. Final design, verification, and stewardship remain the responsibility of Morgan S. Company.
+        </p>
       </footer>
     </div>
   )
