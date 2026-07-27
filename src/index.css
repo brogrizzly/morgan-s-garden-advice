@@ -1,21 +1,26 @@
 :root {
-  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.5;
   font-weight: 400;
-  color: #433527;
-  background: #f3ebdb;
+  color: #f7f3e3;
+  background: #352879;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --text: #433527;
-  --text-h: #2d241c;
-  --text-muted: #64513d;
-  --bg: #f3ebdb;
-  --surface: #fcf7ee;
-  --border: #cdbba9;
-  --accent-strong: #5f4228;
-  --shadow: 0 12px 28px rgba(56, 41, 27, 0.1);
+
+  --text: #f7f3e3;
+  --text-h: #ffffff;
+  --text-muted: #b8c6ff;
+  --bg: #352879;
+  --surface: #5146a2;
+  --surface-deep: #24195f;
+  --border: #7869c4;
+  --accent-strong: #6cffe9;
+  --accent-warm: #ff9f43;
+  --accent-flower: #ff6ac1;
+  --accent-leaf: #7ee787;
+  --shadow: 0 12px 0 rgba(24, 14, 78, 0.5);
 }
 
 * {
@@ -31,9 +36,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    linear-gradient(135deg, rgba(255, 248, 236, 0.85), transparent 35%),
-    linear-gradient(0deg, rgba(93, 115, 68, 0.06), transparent 25%),
+    linear-gradient(rgba(108, 255, 233, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108, 255, 233, 0.035) 1px, transparent 1px),
     var(--bg);
+  background-size: 24px 24px;
   color: var(--text);
 }
 
@@ -60,11 +66,16 @@ ul {
 h1,
 h2,
 h3 {
-  font-family: 'Georgia', 'Iowan Old Style', 'Palatino Linotype', serif;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   color: var(--text-h);
 }
 
+::selection {
+  background: var(--accent-flower);
+  color: var(--surface-deep);
+}
+
 :focus-visible {
-  outline: 2px solid var(--accent-strong);
+  outline: 3px solid var(--accent-strong);
   outline-offset: 3px;
 }
