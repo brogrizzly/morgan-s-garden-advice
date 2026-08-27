@@ -62,11 +62,11 @@ The garden is evidence of the garden. It may inspire software hypotheses, but it
 
 Stokes' theorem relates circulation around a boundary to curl across the bounded surface:
 
-[
-\oint_{\partial S}\mathbf{F}\cdot d\mathbf{r}
+$
+\\oint_{\\partial S}\\mathbf{F}\\cdot d\\mathbf{r}
 =
-\iint_S(\nabla\times\mathbf{F})\cdot\mathbf{n}\,dS
-]
+\\iint_S(\\nabla\\times\\mathbf{F})\\cdot\\mathbf{n}\\,dS
+$
 
 For MSSS this is a candidate accounting metaphor: internal activity should reconcile with observable boundary behavior. It is not a claim that software literally has the differentiable structure required for a formal application of the theorem.
 
