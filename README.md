@@ -1,4 +1,14 @@
-# React + TypeScript + Vite
+# Morgan's Garden Advice
+
+A restrained C64 field notebook for dated garden photographs, observations, and plant-first advice.
+
+## Project documentation
+
+- [Weather Is What the Garden Has to Solve](docs/WEATHER_BIOLOGY_MATH_WHITEPAPER.md) - the biological, mathematical, and Carl Sagan-informed method for translating weather evidence into garden advice.
+
+## Development
+
+This project uses React, TypeScript, and Vite.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
