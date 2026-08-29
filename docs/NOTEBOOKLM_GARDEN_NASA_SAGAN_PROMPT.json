@@ -1,0 +1,111 @@
+{
+  "title": "Morgan's Garden Advice: Flowers, NASA, Sagan, Guantanamo and the Space Cadets",
+  "task": "Create a funny but scientifically serious NotebookLM audio episode explaining how Morgan's Garden Advice translates planetary weather data into biological garden advice. Treat the plants as the story, the math as the explanation, and the human as the local sensor and steward. Preserve uncertainty. Contrast observations, calculations, supported inferences and speculation.",
+  "tone": [
+    "Carl Sagan explaining a chaotic coastal flower garden",
+    "C64 field notebook meets NASA Earth science",
+    "warm, skeptical, technically literate and funny",
+    "two hosts may gently argue about goats, satellites and Guantanamo geography"
+  ],
+  "core_thesis": "GardenResponse = f(organism, lifeStage, weather, soil, microclimate, history, care). Weather is not advice until it is translated through plant biology and visible plant stage.",
+  "sagan_framework": {
+    "Cosmos": "Connect molecular, organism, garden, coastal, atmospheric and planetary scales.",
+    "Pale_Blue_Dot": "Not a formal scientific theory. It is Sagan's evidence-grounded planetary and stewardship perspective inspired by Voyager 1's 14 February 1990 photograph of Earth.",
+    "stewardship_axiom": "Every local action occurs inside one finite, shared planetary system.",
+    "Demon_Haunted_World": "Separate mechanism from story; correlation, sequence and confidence are not proof of causation.",
+    "Billions_and_Billions": "Respect units, accumulation, rates, feedback, orders of magnitude and long-horizon deltas."
+  },
+  "evidence_classes": {
+    "observed": "Directly photographed or measured: the leaves are stippled.",
+    "calculated": "Transparently derived from dated inputs.",
+    "supported_inference": "A known mechanism fits, but alternatives remain.",
+    "speculation": "Interesting and worth logging, but not established."
+  },
+  "biology": [
+    "Light drives photosynthesis, but regional shortwave radiation is not identical to leaf-level photosynthetically active radiation.",
+    "Thermal time helps explain emergence, budding, flowering, insects and seed maturation.",
+    "Vapor-pressure deficit represents atmospheric drying demand better than relative humidity alone.",
+    "Rainfall is an input, not proof that usable water reached the root zone.",
+    "Seeds respond to soil temperature, water, oxygen, dormancy, depth and viability—not merely two-meter air temperature.",
+    "Wind changes transpiration, convective cooling, pollen movement, lodging and seed dispersal.",
+    "The same weather means different things to a seed, seedling, flower and mature seed head.",
+    "Photographs show phenotype and stage, but color alone cannot prove pests, disease or nutrient deficiency."
+  ],
+  "math": {
+    "state_delta": "X_t = X_(t-1) + deltaX_t",
+    "fahrenheit_to_celsius": "T_C = (T_F - 32) * 5/9",
+    "mph_to_mps": "v_mps = 0.44704 * v_mph",
+    "inches_to_mm": "P_mm = 25.4 * P_in",
+    "solar_conversion": "H_kWh_per_m2 = H_MJ_per_m2 / 3.6",
+    "matched_day_clearness": "K = H_all_sky / H_clear_sky; calculate only when date, location and period match",
+    "growing_degree_days": "GDD_d = max(0, ((Tmax_d + Tmin_d) / 2) - Tbase)",
+    "accumulated_gdd": "GDD_1_to_n = sum(GDD_d)",
+    "saturation_vapor_pressure": "es(T) = 0.6108 * exp((17.27 * T) / (T + 237.3)) kPa",
+    "actual_vapor_pressure": "ea = (RH / 100) * es(T)",
+    "vapor_pressure_deficit": "VPD = es - ea",
+    "reference_evapotranspiration": "ET0 = [0.408*Delta*(Rn-G) + gamma*(900/(T+273))*u2*(es-ea)] / [Delta + gamma*(1+0.34*u2)]",
+    "crop_evapotranspiration": "ETc = Kc * ET0",
+    "root_zone_water": "S_t = clip(S_(t-1) + P_t + I_t - ETc_t - R_t - D_t, 0, Smax)",
+    "emergence_fraction": "E = N_emerged / N_sown",
+    "confidence": "C = (locality * freshness * directness * agreement)^(1/4); this is a transparent project heuristic, not a biological law",
+    "haversine": {
+      "delta": "deltaPhi = phi2-phi1; deltaLambda = lambda2-lambda1",
+      "a": "a = sin^2(deltaPhi/2) + cos(phi1)*cos(phi2)*sin^2(deltaLambda/2)",
+      "central_angle": "c = 2*asin(sqrt(a))",
+      "distance": "d_km = 6371*c",
+      "unit_conversions": "d_miles = 0.621371*d_km; d_nautical_miles = 0.539957*d_km"
+    }
+  },
+  "locations": [
+    {"name":"Coos Bay garden region","coordinates":"43.37 N, 124.22 W","meaning":"cool humid Pacific garden and photographic origin"},
+    {"name":"Boca Chica Key","coordinates":"24.575 N, 81.689 W","meaning":"nearest ordinary sovereign U.S. soil comparison"},
+    {"name":"Key West","coordinates":"24.5551 N, 81.7800 W","meaning":"Florida Keys NASA POWER, tide and weather reference"},
+    {"name":"Naval Station Guantanamo Bay","coordinates":"19.9175 N, 75.1600 W","meaning":"public Caribbean distance origin; Cuba retains ultimate sovereignty while the U.S. exercises jurisdiction and control under the lease"},
+    {"name":"Mar-a-Lago","coordinates":"26.6771 N, 80.0367 W","meaning":"Palm Beach coastal comparison"},
+    {"name":"Kennedy Space Center","coordinates":"28.6000 N, 80.6000 W","meaning":"NASA launch, ecology, food-plant and STEM reference"},
+    {"name":"Johnson Space Center","coordinates":"29.5580 N, 95.0900 W","meaning":"human spaceflight and astronaut Earth-observation reference"}
+  ],
+  "guantanamo_distances": [
+    {"destination":"Boca Chica Key","distance":"848 km | 527 mi | 458 nmi"},
+    {"destination":"Key West","distance":"854 km | 531 mi | 461 nmi"},
+    {"destination":"Mar-a-Lago","distance":"901 km | 560 mi | 487 nmi"},
+    {"destination":"Kennedy Space Center","distance":"1111 km | 691 mi | 600 nmi"},
+    {"destination":"Johnson Space Center","distance":"2275 km | 1414 mi | 1229 nmi"}
+  ],
+  "distance_punchline": "Mar-a-Lago is only about 29 straight-line miles farther from Guantanamo than Key West, and Kennedy is approximately 600 nautical miles away. These are great-circle surface distances, not travel routes.",
+  "weather_case": {
+    "coos_bay_latest_nasa_solar": "18.01 MJ/m2/day = 5.00 kWh/m2/day",
+    "key_west_latest_nasa_solar": "25.47 MJ/m2/day = 7.08 kWh/m2/day",
+    "comparison": "The Key West snapshot was about 41 percent greater, but source dates and latency must remain visible.",
+    "moon": "Approximately 99.26 percent illuminated immediately after the deep partial lunar eclipse. Lunar phase is legitimate context, not proof of a gardening effect.",
+    "data_rule": "NASA POWER fill value -999 means missing data, never zero weather."
+  },
+  "nasa_education": [
+    "Run one observation protocol across Coos Bay, Key West, public communities around Guantanamo Bay, Palm Beach and Kennedy.",
+    "Compare backyard photographs, GLOBE Observer ground truth and satellite-pixel truth.",
+    "Study coastal land-water coupling through public sea-surface temperature, ocean color, rainfall, vegetation and shoreline data.",
+    "Teach solar-energy units, latency and missing-data rejection.",
+    "Compare thermal time and plant phenology across latitude.",
+    "Move from Johnson astronaut photography to satellite imagery, city maps and backyard photographs.",
+    "Connect Kennedy rockets, coastal ecology, conservation and food-plant research.",
+    "Use Guantanamo geography to teach haversine math, sovereignty, jurisdiction, civic literacy and ethical restraint."
+  ],
+  "garden_cast": [
+    "Cosmos flowering, budding and producing mature seed simultaneously",
+    "Pale branching sunflowers with dark centers",
+    "Orange calendula in several flower forms",
+    "Nasturtiums blooming through mature mint or catnip",
+    "Mint or catnip heavily committed to seed",
+    "Goats acting as enthusiastic but legally unauthorized garden editors"
+  ],
+  "jokes": [
+    "The goats are, scientifically speaking, supervising the whole operation.",
+    "The fence is the border between the flower story and the goat editing department.",
+    "The first class of Space Cadets, educated by flowers, satellites, spherical geometry and one deeply complicated Caribbean lease.",
+    "The finest Space Cadets anywhere graduated from Guantanamo Bay. Tremendous spherical geometry. Nobody calculates Florida better.",
+    "Clarify that the Space Cadet graduation is satire and is not attributed to NASA, Donald Trump, the United States government or any real educational program."
+  ],
+  "critical_thinking_bit": "Use the Space Cadet joke as a Sagan-style verification exercise: Who actually said it? Does the institution exist? What does graduated from mean? Which legal and geographic claims are implied? What evidence would disprove it?",
+  "required_conclusion": "The plants are the story. The math explains part of what reached them. The photographs show part of what they did with it. The human supplies continuity, judgment and care. End with the idea that one Coos Bay flower bed can lead outward to NASA satellites, Caribbean geography and the pale blue dot—and then return to a seed in the soil.",
+  "source_instruction": "Use and cite the uploaded Morgan's Garden Advice whitepaper. Preserve its MLA 9 Works Cited, especially Carl Sagan's Cosmos, Pale Blue Dot, The Demon-Haunted World and Billions and Billions, plus NASA POWER, NASA Earthdata, NOAA, FAO-56, USDA NRCS, Oregon State University Extension, the U.S. State Department's 1903 lease record and The Planetary Society's A Pale Blue Dot. Do not invent quotations or page numbers."
+}
