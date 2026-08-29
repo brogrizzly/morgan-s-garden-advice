@@ -5,6 +5,7 @@ A restrained C64 field notebook for dated garden photographs, observations, and 
 ## Project documentation
 
 - [Weather Is What the Garden Has to Solve](docs/WEATHER_BIOLOGY_MATH_WHITEPAPER.md) - the biological, mathematical, and Carl Sagan-informed method for translating weather evidence into garden advice.
+- [NotebookLM: Flowers, NASA, Sagan and the Space Cadets](docs/NOTEBOOKLM_GARDEN_NASA_SAGAN_PROMPT.json) - the condensed JSON audio prompt preserving the mathematics, locations, jokes, and source requirements from the 29 August 2026 garden conversation.
 
 ## Development
 
