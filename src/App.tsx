@@ -270,6 +270,9 @@ function App() {
         <div className="footer-links">
           <a href="#hero">Built with G4LO</a>
           <a href="#ai-tools">Tool acknowledgments</a>
+          <a href="https://www.youtube.com/user/RATMVEVO" target="_blank" rel="noreferrer">
+            Cleaning soundtrack / RATM
+          </a>
         </div>
         <p className="acknowledgment">
           With sincere gratitude to the open-source software and AI communities, especially the people who share code, research, documentation, and models such as Qwen. ChatGPT and Codex from OpenAI, Google AI tools, Visual Studio Code, GitHub, and open-source models have been valuable development tools. Final design, verification, and stewardship remain the responsibility of Morgan S. Company.
