@@ -65,6 +65,24 @@ const galleryItems = [
   },
 ]
 
+const creativeInfluences = [
+  {
+    name: 'KRS-One / Boogie Down Productions',
+    href: 'https://www.krs-one.com/about',
+    text: 'Knowledge as practice: teach it, question it, and keep human beings in command of what they learn and decide.',
+  },
+  {
+    name: 'Zack de la Rocha / Rage Against the Machine',
+    href: 'https://www.ratm.com/',
+    text: 'Music as public argument: examine institutional power, preserve historical memory, and ask what a system actually does to people.',
+  },
+  {
+    name: 'Tom Morello',
+    href: 'https://www.tommorello.com/',
+    text: 'Treat constraints, noise, switches, feedback, and familiar tools as raw material for new instruments that humans can still understand and control.',
+  },
+]
+
 function App() {
   return (
     <div className="page-shell">
@@ -78,6 +96,7 @@ function App() {
           <a href="#how-this-works">How This Works</a>
           <a href="#services">Services</a>
           <a href="#garden-pictures">Garden Pictures</a>
+          <a href="#influences">Influences</a>
           <a href="#boundaries">Boundaries</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -228,6 +247,35 @@ function App() {
             <article><h3>People and animals</h3><p>I do not certify that a plant is safe for children, dogs, cats, goats, livestock, or wildlife. Toxicity and safety must be checked independently through authoritative sources.</p></article>
             <article><h3>Results</h3><p>Weather, soil, watering, timing, wildlife, maintenance, and chance all affect what happens next.</p></article>
             <article><h3>Responsibility</h3><p>You choose the seeds. You buy them. You plant them. You care for them. Final decisions remain yours.</p></article>
+          </div>
+        </section>
+
+        <section className="section" id="influences">
+          <div className="section-heading">
+            <p className="eyebrow">G4LO Creative Lineage</p>
+            <h2>Code has influences outside code.</h2>
+          </div>
+          <p className="section-intro">
+            Politically conscious hip-hop and Rage Against the Machine are major influences on
+            G4LO's language, posture, and insistence that systems expose rather than conceal power.
+          </p>
+          <div className="boundary-list">
+            {creativeInfluences.map((influence) => (
+              <article key={influence.name}>
+                <h3>
+                  <a href={influence.href} target="_blank" rel="noreferrer">
+                    {influence.name}
+                  </a>
+                </h3>
+                <p>{influence.text}</p>
+              </article>
+            ))}
+          </div>
+          <div className="note-box">
+            <p>
+              Influence is acknowledgment, not affiliation or endorsement. This is a living list;
+              more artists will be added when they are named and linked carefully.
+            </p>
           </div>
         </section>
 
