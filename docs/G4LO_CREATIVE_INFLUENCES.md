@@ -20,7 +20,7 @@ This is not a sterile bibliography. **KRS-One, Zack de la Rocha, Rage Against th
 
 ## A living lineage
 
-KRS-One, Zack de la Rocha, Tom Morello, and Rage Against the Machine are the first explicitly recorded musical influences, not the entire lineage. Other rappers and musicians will be added when they are named and linked carefully rather than folded into a vague or invented list.
+Music broadly is a direct inspiration for G4LO: far too many bands, rappers, musicians, songs, and records to list without turning this page into a record store. KRS-One, Zack de la Rocha, Tom Morello, and Rage Against the Machine are especially important named examples, not the entire lineage. More may be added when a particular connection is worth explaining, but absence from this short list does not mean absence from the project's creative history.
 
 ## Love, credit, and honesty
 
