@@ -258,6 +258,9 @@ function App() {
           <p className="section-intro">
             Politically conscious hip-hop and Rage Against the Machine are major influences on
             G4LO's language, posture, and insistence that systems expose rather than conceal power.
+            KRS-One, Zack de la Rocha, Rage Against the Machine, and Tom Morello are direct
+            inspirations for G4LO. This is not a sterile bibliography. I fucking love these artists
+            and their work.
           </p>
           <div className="boundary-list">
             {creativeInfluences.map((influence) => (
@@ -273,8 +276,9 @@ function App() {
           </div>
           <div className="note-box">
             <p>
-              Influence is acknowledgment, not affiliation or endorsement. This is a living list;
-              more artists will be added when they are named and linked carefully.
+              These are direct creative inspirations, and the links send people directly toward their
+              work. They are not formally affiliated with G4LO; I am giving loud, honest credit to
+              people whose work I love. This is a living list.
             </p>
           </div>
         </section>
