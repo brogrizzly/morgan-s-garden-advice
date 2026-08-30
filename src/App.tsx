@@ -278,7 +278,9 @@ function App() {
             <p>
               These are direct creative inspirations, and the links send people directly toward their
               work. They are not formally affiliated with G4LO; I am giving loud, honest credit to
-              people whose work I love. This is a living list.
+              people whose work I love. Music broadly is a direct inspiration—far too many bands,
+              rappers, musicians, songs, and records to list. These are important named examples,
+              not the entire lineage.
             </p>
           </div>
         </section>
