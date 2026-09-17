@@ -4,6 +4,8 @@ A restrained C64 field notebook for dated garden photographs, observations, and 
 
 ## Project documentation
 
+- [Title 22 — Congressional History and Reading Links](docs/TITLE_22_CONGRESSIONAL_HISTORY_READING.md) - official statutory and congressional sources for reading later.
+- [USIP / Donald J. Trump Name — Fact Check, 17 September 2026](docs/USIP_TRUMP_NAME_FACT_CHECK_2026-09-17.md) - verified branding, congressional origins, and limits of the legal evidence.
 - [G4LO Creative Influences](docs/G4LO_CREATIVE_INFLUENCES.md) - KRS-One, Zack de la Rocha, Rage Against the Machine, and Tom Morello, with direct links and an explicit independence boundary.
 - [Garden Log — 30 August 2026](docs/GARDEN_LOG_2026-08-30_CHICKS_SEEDS_SOUNDTRACK.md) - chicks, garden observations, collected calendula seed, and the Rage Against the Machine cleaning soundtrack.
 - [Weather Is What the Garden Has to Solve](docs/WEATHER_BIOLOGY_MATH_WHITEPAPER.md) - the biological, mathematical, and Carl Sagan-informed method for translating weather evidence into garden advice.
