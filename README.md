@@ -4,6 +4,8 @@ A restrained C64 field notebook for dated garden photographs, observations, and 
 
 ## Project documentation
 
+- [Garden Log — 17 October 2026: Late Bloomers](docs/GARDEN_LOG_2026-10-17_LATE_BLOOMERS.md) — calendulas flowering and developing seed, cosmos, sunflowers, nasturtiums, 23 original photographs, and dated NASA POWER/lunar data.
+
 - [Title 22 — Congressional History and Reading Links](docs/TITLE_22_CONGRESSIONAL_HISTORY_READING.md) - official statutory and congressional sources for reading later.
 - [USIP / Donald J. Trump Name — Fact Check, 17 September 2026](docs/USIP_TRUMP_NAME_FACT_CHECK_2026-09-17.md) - verified branding, congressional origins, and limits of the legal evidence.
 - [G4LO Creative Influences](docs/G4LO_CREATIVE_INFLUENCES.md) - KRS-One, Zack de la Rocha, Rage Against the Machine, and Tom Morello, with direct links and an explicit independence boundary.
