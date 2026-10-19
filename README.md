@@ -1,92 +1,63 @@
 # Morgan's Garden Advice
 
-A restrained C64 field notebook for dated garden photographs, observations, and plant-first advice.
+Morgan S. Company / Morgan Seed Company: a C64-inspired garden advice page and field notebook for dated photographs, observations, and plant-first reasoning.
 
-## Project documentation
-
-- [Garden Log — 17 October 2026: Late Bloomers](docs/GARDEN_LOG_2026-10-17_LATE_BLOOMERS.md) — calendulas flowering and developing seed, cosmos, sunflowers, nasturtiums, 23 original photographs, and dated NASA POWER/lunar data.
-
-- [Title 22 — Congressional History and Reading Links](docs/TITLE_22_CONGRESSIONAL_HISTORY_READING.md) - official statutory and congressional sources for reading later.
-- [USIP / Donald J. Trump Name — Fact Check, 17 September 2026](docs/USIP_TRUMP_NAME_FACT_CHECK_2026-09-17.md) - verified branding, congressional origins, and limits of the legal evidence.
-- [G4LO Creative Influences](docs/G4LO_CREATIVE_INFLUENCES.md) - KRS-One, Zack de la Rocha, Rage Against the Machine, and Tom Morello, with direct links and an explicit independence boundary.
-- [Garden Log — 30 August 2026](docs/GARDEN_LOG_2026-08-30_CHICKS_SEEDS_SOUNDTRACK.md) - chicks, garden observations, collected calendula seed, and the Rage Against the Machine cleaning soundtrack.
-- [Weather Is What the Garden Has to Solve](docs/WEATHER_BIOLOGY_MATH_WHITEPAPER.md) - the biological, mathematical, and Carl Sagan-informed method for translating weather evidence into garden advice.
-- [NotebookLM: Flowers, NASA, Sagan and the Space Cadets](docs/NOTEBOOKLM_GARDEN_NASA_SAGAN_PROMPT.json) - the condensed JSON audio prompt preserving the mathematics, locations, jokes, and source requirements from the 29 August 2026 garden conversation.
+The site describes five-picture garden reviews and written seed recommendations. It is a static React application: the contact section currently explains intake requirements, and submissions, payments, uploads, and live weather lookups are not implemented.
 
 ## Development
 
-This project uses React, TypeScript, and Vite.
+Use Node.js 24 and npm. The lockfile is committed; use `npm ci` for a reproducible installation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vite prints the local development URL. To build and serve the production bundle:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm run build
+npm run preview
 ```
+
+The build is written to `dist/`. No environment variables or credentials are needed for the current static site.
+
+## Checks and tests
+
+```sh
+npm run lint
+npm test
+npm run build
+npx playwright install chromium
+npm run test:browser
+```
+
+- `npm test` checks local documentation links, research JSON, and original photograph hashes, sizes, and manifest coverage. It runs offline and does not verify external URLs or factual claims.
+- `npm run test:browser` serves the production build and checks the rendered journal, photograph decoding, navigation, intake status, button contrast, and narrow-screen layout. Run `npm run build` first. Browser checks do not depend on external stock-image services.
+- `npm run check` runs lint, repository tests, the build, and browser tests in sequence. Install the Playwright browser first; on Linux, `npx playwright install --with-deps chromium` also installs required system libraries.
+
+To use an existing Chromium installation, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable path. GitHub Actions runs the same checks on pushes and pull requests.
+
+## Repository map
+
+- `src/App.tsx` and `src/App.css`: service page, intake information, and creative acknowledgments.
+- `src/components/GardenStrip.tsx` and `src/data/gardenJournal.ts`: dated garden journal and photograph selection.
+- `public/garden/2026-10-17/`: 23 original photographs and their SHA-256/byte-count manifest. Preserve the originals and update the manifest if intentionally replacing them.
+- `docs/`: field logs, research, reading lists, and historical checkpoints. Dated observations and weather snapshots are historical evidence, not current conditions.
+- `docs/archive/`: superseded authored material retained for reference; excluded from the application.
+- `tests/`: repository integrity and browser regression checks.
+
+## Garden logs and research
+
+- [Garden Log — 17 October 2026: Late Bloomers](docs/GARDEN_LOG_2026-10-17_LATE_BLOOMERS.md): calendulas, cosmos, sunflowers, nasturtiums, original photographs, and dated NASA POWER/lunar data.
+- [Garden Log — 30 August 2026](docs/GARDEN_LOG_2026-08-30_CHICKS_SEEDS_SOUNDTRACK.md): chicks, garden observations, calendula seed, and the cleaning soundtrack.
+- [Weather Is What the Garden Has to Solve](docs/WEATHER_BIOLOGY_MATH_WHITEPAPER.md): biological and mathematical methods for translating weather evidence into garden advice, with Works Cited.
+- [NotebookLM: Flowers, NASA, Sagan and the Space Cadets](docs/NOTEBOOKLM_GARDEN_NASA_SAGAN_PROMPT.json): an audio prompt derived from the August garden conversation; use the whitepaper alongside it for source context.
+- [Offline-First Archon Checkpoint — 27 August 2026](docs/MSSS_OFFLINE_FIRST_ARCHON_CHECKPOINT_2026-08-27.md): historical architecture and mathematics notes; proposed capabilities are not a description of the current frontend.
+- [Title 22 — Congressional History and Reading Links](docs/TITLE_22_CONGRESSIONAL_HISTORY_READING.md): statutory and congressional reading sources.
+- [USIP / Donald J. Trump Name — Fact Check, 17 September 2026](docs/USIP_TRUMP_NAME_FACT_CHECK_2026-09-17.md): dated branding and congressional-origin research, including limits of the legal evidence.
+- [USIP Wordplay Checkpoint — 17 September 2026](docs/USIP_PISS_JOKE_CHECKPOINT_2026-09-17.md): a preserved satire note.
+- [G4LO Creative Influences](docs/G4LO_CREATIVE_INFLUENCES.md): artist links, creative credit, and an explicit independence boundary.
+- [Bibliography and Documentation Audit — 19 October 2026](docs/BIBLIOGRAPHY_AUDIT_2026-10-19.md): corrections, source-check results, and unresolved verification limits.
+
+When updating research, distinguish observation, calculation, inference, and speculation. Keep dates and units with data, preserve source provenance, and record retrieval failures separately from confirmed citation errors.

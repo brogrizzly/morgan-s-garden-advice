@@ -6,8 +6,8 @@ Research checkpoint: 17 September 2026. Personal reading notes for Morgan's Gard
 
 Title 22 concerns U.S. foreign relations. The United States Institute of Peace is addressed in **Chapter 56, sections 4601–4611**. The congressional history matters because the institution was established through legislation, and its public branding does not by itself establish what Congress enacted.
 
-- [Title 22: official House U.S. Code](https://uscode.house.gov/view.xhtml?path=/prelim@title22&edition=prelim)
-- [Chapter 56: official House U.S. Code](https://uscode.house.gov/view.xhtml?path=/prelim@title22/chapter56&edition=prelim)
+- [Title 22: official GPO U.S. Code, 2024 edition](https://www.govinfo.gov/content/pkg/USCODE-2024-title22/html/USCODE-2024-title22.htm)
+- [Chapter 56: official GPO U.S. Code, 2024 edition](https://www.govinfo.gov/content/pkg/USCODE-2024-title22/html/USCODE-2024-title22-chap56.htm)
 - [Section 4603: official GPO text, 2024 edition](https://www.govinfo.gov/content/pkg/USCODE-2024-title22/html/USCODE-2024-title22-chap56-sec4603.htm)
 - [Original Wikipedia chapter index](https://en.wikipedia.org/wiki/Title_22_of_the_United_States_Code)
 
@@ -27,4 +27,6 @@ This reading list identifies where to continue research. It does not claim that 
 
 See [USIP and the Donald J. Trump branding: fact check](USIP_TRUMP_NAME_FACT_CHECK_2026-09-17.md).
 
-Verification boundary: the historical GPO text was retrieved successfully. The House's current full-text pages did not load reliably during this check. No claim is made that a 2024 edition alone establishes every subsequent amendment or the final outcome of litigation.
+Verification boundary: the historical GPO text was retrieved successfully. No claim is made that a 2024 edition alone establishes every subsequent amendment or the final outcome of litigation.
+
+Link maintenance, 19 October 2026: the two former House `view.xhtml` links returned “Page Not Found - US Code” despite HTTP 200 responses. Replaced them with verified official GPO links explicitly labeled as the 2024 edition. The research checkpoint date above is unchanged.

@@ -163,6 +163,8 @@ and
 VPD=e_s-e_a.
 \]
 
+These relations describe paired temperature and relative-humidity readings. Because saturation vapour pressure is nonlinear in temperature, inserting daily mean temperature and daily mean relative humidity is an approximation. For daily FAO-56 evapotranspiration, calculate daily saturation and actual vapour pressure using the FAO-56 procedures and available maximum/minimum temperature, humidity, or dew-point data (Allen et al.).
+
 Higher VPD generally strengthens the gradient driving water vapour from leaf to air, although stomata, boundary layers, wind, species, and soil-water supply determine the actual response. Oregon State University Extension emphasizes that the humidity difference affects water movement and transpiration. Morgan therefore combines VPD with wind, solar energy, soil moisture, and visible wilting rather than reading it alone.
 
 ### 3.4 Water: separate rainfall, demand, and storage
@@ -175,7 +177,7 @@ The standard reference-demand calculation is the FAO-56 Penman-Monteith equation
 ET_0 = \frac{0.408\Delta(R_n-G)+\gamma\frac{900}{T+273}u_2(e_s-e_a)}{\Delta+\gamma(1+0.34u_2)}.
 \]
 
-Where \(ET_0\) is reference evapotranspiration in millimetres per day; \(R_n\) is net radiation; \(G\) is soil heat flux; \(T\) is mean air temperature; \(u_2\) is wind speed at two metres; \(e_s-e_a\) is VPD; \(\Delta\) is the slope of the saturation-vapour-pressure curve; and \(\gamma\) is the psychrometric constant. FAO recommends this standardized reference method.
+Where \(ET_0\) is reference evapotranspiration in millimetres per day; \(R_n\) is net radiation and \(G\) is soil heat flux, both in MJ m⁻² day⁻¹; \(T\) is mean air temperature in °C; \(u_2\) is wind speed at two metres in m s⁻¹; \(e_s-e_a\) is VPD in kPa; \(\Delta\) is the slope of the saturation-vapour-pressure curve and \(\gamma\) is the psychrometric constant, both in kPa °C⁻¹. FAO recommends this standardized reference method.
 
 Plant or bed demand is approximated by
 
@@ -368,14 +370,14 @@ These coordinates are public, approximate reference points used for education ra
 | Place | Reference coordinates | Role in the comparison |
 |---|---:|---|
 | Coos Bay garden region, Oregon | 43.37 N, 124.22 W | Cool, humid northeastern Pacific garden and field-observation origin |
-| Boca Chica Key, Florida | 24.575 N, 81.689 W | Nearest ordinary sovereign U.S. land comparison used in the Florida Keys |
+| Boca Chica Key, Florida | 24.575 N, 81.689 W | Florida Keys land reference used in this comparison |
 | Key West, Florida | 24.5551 N, 81.7800 W | Southernmost-city weather, tide, and NASA POWER reference |
 | Naval Station Guantanamo Bay | 19.9175 N, 75.1600 W | Public geographic origin for the Caribbean distance exercise |
 | Mar-a-Lago, Palm Beach | 26.6771 N, 80.0367 W | Publicly addressed coastal Florida comparison point |
 | Kennedy Space Center | 28.6000 N, 80.6000 W | NASA launch, conservation, plant-research, and STEM reference |
 | Johnson Space Center | 29.5580 N, 95.0900 W | NASA human-spaceflight and astronaut Earth-observation reference |
 
-The Guantanamo base is operated by the United States under a lease while ultimate sovereignty remains Cuban. Therefore the distance exercise does not label the base itself "American soil." Boca Chica Key and Key West are the Florida reference points.
+The Guantanamo base is operated by the United States under a lease while ultimate sovereignty remains Cuban. Therefore the distance exercise does not label the base itself "American soil." Boca Chica Key and Key West are the Florida reference points. This selected-point exercise does not establish the nearest U.S. land or compare every U.S. territory.
 
 ### 8.2 Great-circle calculation
 
@@ -492,7 +494,7 @@ This dataset makes the learning opportunity reproducible while keeping the organ
 
 Morgan's advice improves through local evidence rather than rhetorical confidence.
 
-### 8.1 Minimum garden experiment
+### 9.1 Minimum garden experiment
 
 For a question such as cold-soil calendula germination:
 
@@ -506,7 +508,7 @@ For a question such as cold-soil calendula germination:
 8. retain failures and missing data;
 9. repeat across more than one sowing period.
 
-### 8.2 Calibration targets
+### 9.2 Calibration targets
 
 Over time, compare predictions with outcomes:
 
