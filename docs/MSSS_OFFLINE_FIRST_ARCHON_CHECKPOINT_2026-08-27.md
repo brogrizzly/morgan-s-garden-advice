@@ -63,9 +63,9 @@ The garden is evidence of the garden. It may inspire software hypotheses, but it
 Stokes' theorem relates circulation around a boundary to curl across the bounded surface:
 
 ```math
-\\oint_{\\partial S}\\mathbf{F}\\cdot d\\mathbf{r}
+\oint_{\partial S}\mathbf{F}\cdot d\mathbf{r}
 =
-\\iint_S(\\nabla\\times\\mathbf{F})\\cdot\\mathbf{n}\\,dS
+\iint_S(\nabla\times\mathbf{F})\cdot\mathbf{n}\,dS
 ```
 
 For MSSS this is a candidate accounting metaphor: internal activity should reconcile with observable boundary behavior. It is not a claim that software literally has the differentiable structure required for a formal application of the theorem.
@@ -131,5 +131,5 @@ And if an ordinary person cannot own the forge, inspect the steel, and shut off 
 
 - *Conan the Barbarian*. Directed by John Milius; screenplay by John Milius and Oliver Stone. Universal Pictures, 1982.
 - MIT OpenCourseWare. “Stokes' Theorem.” https://ocw.mit.edu/ans7870/18/18.013a/textbook/chapter28/section01.html
-- Carrington, J. C., et al. “Cell-to-Cell and Long-Distance Transport of Viruses in Plants.” https://www.ncbi.nlm.nih.gov/pmc/articles/PMC161306/
-- Ueki, S., and V. Citovsky. “Plasmodesmata: Gateways to Local and Systemic Virus Infection.” https://doi.org/10.1094/MPMI-05-10-0116
+- Carrington, J. C., et al. “Cell-to-Cell and Long-Distance Transport of Viruses in Plants.” *The Plant Cell*, Oct. 1996, pp. 1669–1681. https://doi.org/10.1105/tpc.8.10.1669
+- Benitez-Alfonso, Yoselin, et al. “Plasmodesmata: Gateways to Local and Systemic Virus Infection.” *Molecular Plant-Microbe Interactions*, vol. 23, no. 11, Nov. 2010, pp. 1403–1412. https://doi.org/10.1094/MPMI-05-10-0116

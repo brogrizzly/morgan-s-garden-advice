@@ -6,7 +6,9 @@ This is not a sterile bibliography. **KRS-One, Zack de la Rocha, Rage Against th
 
 ## KRS-One and Boogie Down Productions
 
-[KRS-One's work](https://www.krs-one.com/about) is a direct inspiration for G4LO's treatment of knowledge as something practiced, taught, questioned, and carried into public life. The inspiration is not a borrowed slogan or aesthetic costume. It is the harder expectation that an intelligent system should help people reason, learn, and retain authority over their own decisions.
+KRS-One's work is a direct inspiration for G4LO's treatment of knowledge as something practiced, taught, questioned, and carried into public life. The inspiration is not a borrowed slogan or aesthetic costume. It is the harder expectation that an intelligent system should help people reason, learn, and retain authority over their own decisions.
+
+[KRS-One — reference biography (Wikipedia)](https://en.wikipedia.org/wiki/KRS-One). Link maintenance, 19 October 2026: the former `www.krs-one.com/about` biography returned a Wix domain-connection error with HTTP 404. This reference biography replaces that unavailable destination.
 
 ## Zack de la Rocha and Rage Against the Machine
 
@@ -24,4 +26,4 @@ Music broadly is a direct inspiration for G4LO: far too many bands, rappers, mus
 
 ## Love, credit, and honesty
 
-These links send people toward the artists' own work because that work matters to me. KRS-One, Boogie Down Productions, Zack de la Rocha, Tom Morello, and Rage Against the Machine are major creative influences on G4LO. They are not formally affiliated with the project; I am simply giving loud, honest credit to people whose work I love.
+These links send people toward the artists' work and background because that work matters to me. KRS-One, Boogie Down Productions, Zack de la Rocha, Tom Morello, and Rage Against the Machine are major creative influences on G4LO. They are not formally affiliated with the project; I am simply giving loud, honest credit to people whose work I love.

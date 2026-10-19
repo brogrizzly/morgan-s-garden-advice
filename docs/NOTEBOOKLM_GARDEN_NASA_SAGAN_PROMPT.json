@@ -58,7 +58,7 @@
   },
   "locations": [
     {"name":"Coos Bay garden region","coordinates":"43.37 N, 124.22 W","meaning":"cool humid Pacific garden and photographic origin"},
-    {"name":"Boca Chica Key","coordinates":"24.575 N, 81.689 W","meaning":"nearest ordinary sovereign U.S. soil comparison"},
+    {"name":"Boca Chica Key","coordinates":"24.575 N, 81.689 W","meaning":"Florida Keys land reference; no nearest-U.S.-land claim is established"},
     {"name":"Key West","coordinates":"24.5551 N, 81.7800 W","meaning":"Florida Keys NASA POWER, tide and weather reference"},
     {"name":"Naval Station Guantanamo Bay","coordinates":"19.9175 N, 75.1600 W","meaning":"public Caribbean distance origin; Cuba retains ultimate sovereignty while the U.S. exercises jurisdiction and control under the lease"},
     {"name":"Mar-a-Lago","coordinates":"26.6771 N, 80.0367 W","meaning":"Palm Beach coastal comparison"},
@@ -74,6 +74,7 @@
   ],
   "distance_punchline": "Mar-a-Lago is only about 29 straight-line miles farther from Guantanamo than Key West, and Kennedy is approximately 600 nautical miles away. These are great-circle surface distances, not travel routes.",
   "weather_case": {
+    "provenance_status": "Historical conversation snapshots. The prompt does not retain their individual NASA valid dates, retrieval timestamps, or raw responses. Do not present the exact solar or Moon figures as verified or current; omit them from audio unless matched source records are supplied.",
     "coos_bay_latest_nasa_solar": "18.01 MJ/m2/day = 5.00 kWh/m2/day",
     "key_west_latest_nasa_solar": "25.47 MJ/m2/day = 7.08 kWh/m2/day",
     "comparison": "The Key West snapshot was about 41 percent greater, but source dates and latency must remain visible.",
@@ -107,5 +108,5 @@
   ],
   "critical_thinking_bit": "Use the Space Cadet joke as a Sagan-style verification exercise: Who actually said it? Does the institution exist? What does graduated from mean? Which legal and geographic claims are implied? What evidence would disprove it?",
   "required_conclusion": "The plants are the story. The math explains part of what reached them. The photographs show part of what they did with it. The human supplies continuity, judgment and care. End with the idea that one Coos Bay flower bed can lead outward to NASA satellites, Caribbean geography and the pale blue dot—and then return to a seed in the soil.",
-  "source_instruction": "Use and cite the uploaded Morgan's Garden Advice whitepaper. Preserve its MLA 9 Works Cited, especially Carl Sagan's Cosmos, Pale Blue Dot, The Demon-Haunted World and Billions and Billions, plus NASA POWER, NASA Earthdata, NOAA, FAO-56, USDA NRCS, Oregon State University Extension, the U.S. State Department's 1903 lease record and The Planetary Society's A Pale Blue Dot. Do not invent quotations or page numbers."
+  "source_instruction": "Use and cite the uploaded Morgan's Garden Advice whitepaper. Preserve its MLA 9 Works Cited, especially Carl Sagan's Cosmos, Pale Blue Dot, The Demon-Haunted World and Billions and Billions, plus NASA POWER, NASA Earthdata, NOAA, FAO-56, USDA NRCS, Oregon State University Extension, the U.S. State Department's 1903 lease record and The Planetary Society's A Pale Blue Dot. Do not invent quotations or page numbers. Verify the valid date, retrieval time and source record for each numerical weather or lunar example before using it; otherwise describe the method without those exact figures."
 }

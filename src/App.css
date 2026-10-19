@@ -51,8 +51,8 @@
 
 .site-nav a:hover,
 .site-nav a:focus-visible,
-.button:hover,
-.button:focus-visible {
+.button-secondary:hover,
+.button-secondary:focus-visible {
   color: var(--accent-strong);
   border-color: var(--accent-strong);
 }

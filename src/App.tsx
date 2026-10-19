@@ -68,7 +68,7 @@ const galleryItems = [
 const creativeInfluences = [
   {
     name: 'KRS-One / Boogie Down Productions',
-    href: 'https://www.krs-one.com/about',
+    href: 'https://en.wikipedia.org/wiki/KRS-One',
     text: 'Knowledge as practice: teach it, question it, and keep human beings in command of what they learn and decide.',
   },
   {
@@ -118,7 +118,7 @@ function App() {
               This is not a full garden design. It is five useful decisions for one patch of ground.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href="#contact">Send Five Pictures</a>
+              <a className="button button-primary" href="#contact">View Intake Details</a>
               <a className="button button-secondary" href="#how-this-works">How This Works</a>
             </div>
             <div className="field-note-strip" aria-label="Service summary">
@@ -277,7 +277,7 @@ function App() {
           <div className="note-box">
             <p>
               These are direct creative inspirations, and the links send people directly toward their
-              work. They are not formally affiliated with G4LO; I am giving loud, honest credit to
+              work and background. They are not formally affiliated with G4LO; I am giving loud, honest credit to
               people whose work I love. Music broadly is a direct inspiration—far too many bands,
               rappers, musicians, songs, and records to list. These are important named examples,
               not the entire lineage.
