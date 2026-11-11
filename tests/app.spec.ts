@@ -37,6 +37,34 @@ test('navigation targets exist and intake details explain the available service'
   await expect(page.getByText('Submission system is being prepared.', { exact: true })).toBeVisible()
 })
 
+test('the company directory links to its four public GitHub repositories', async ({ page }) => {
+  await page.goto('/', { waitUntil: 'domcontentloaded' })
+
+  const directory = page.getByRole('region', { name: 'Public repositories.' })
+  const repositoryLinks = directory.getByRole('link')
+  await expect(repositoryLinks).toHaveCount(4)
+  for (const link of await repositoryLinks.all()) {
+    await expect(link).toHaveAttribute('target', '_blank')
+    await expect(link).toHaveAttribute('rel', 'noreferrer')
+  }
+  await expect(repositoryLinks.nth(0)).toHaveAttribute(
+    'href',
+    'https://github.com/brogrizzly/morgan-s-garden-advice',
+  )
+  await expect(repositoryLinks.nth(1)).toHaveAttribute(
+    'href',
+    'https://github.com/brogrizzly/archon-llm',
+  )
+  await expect(repositoryLinks.nth(2)).toHaveAttribute(
+    'href',
+    'https://github.com/brogrizzly/4lotools',
+  )
+  await expect(repositoryLinks.nth(3)).toHaveAttribute(
+    'href',
+    'https://github.com/brogrizzly/4LO-tools',
+  )
+})
+
 test('the primary action keeps readable contrast while hovered and keyboard focused', async ({ page }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' })
   const action = page.locator('.button-primary')

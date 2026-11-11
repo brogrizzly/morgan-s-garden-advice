@@ -345,6 +345,42 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.repository-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.repository-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.5rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  box-shadow: 6px 6px 0 var(--surface-deep);
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.repository-card:hover,
+.repository-card:focus-visible {
+  border-color: var(--accent-strong);
+}
+
+.repository-name {
+  font-weight: 800;
+}
+
+.repository-action {
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
 .gallery-card {
   padding: 0.75rem;
 }
@@ -411,6 +447,7 @@
   .steps-grid,
   .services-grid,
   .gallery-grid,
+  .repository-grid,
   .boundary-list,
   .packet-grid,
   .field-note-strip {

@@ -40,7 +40,7 @@ To use an existing Chromium installation, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PA
 
 ## Repository map
 
-- `src/App.tsx` and `src/App.css`: service page, intake information, and creative acknowledgments.
+- `src/App.tsx` and `src/App.css`: service page, intake information, public repository directory, and creative acknowledgments.
 - `src/components/GardenStrip.tsx` and `src/data/gardenJournal.ts`: dated garden journal and photograph selection.
 - `public/garden/2026-10-17/`: 23 original photographs and their SHA-256/byte-count manifest. Preserve the originals and update the manifest if intentionally replacing them.
 - `docs/`: field logs, research, reading lists, and historical checkpoints. Dated observations and weather snapshots are historical evidence, not current conditions.
