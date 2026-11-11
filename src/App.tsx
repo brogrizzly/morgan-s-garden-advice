@@ -65,6 +65,25 @@ const galleryItems = [
   },
 ]
 
+const publicRepositories = [
+  {
+    name: 'Morgan S. Garden Advice',
+    href: 'https://github.com/brogrizzly/morgan-s-garden-advice',
+  },
+  {
+    name: 'Archon LLM',
+    href: 'https://github.com/brogrizzly/archon-llm',
+  },
+  {
+    name: '4lotools',
+    href: 'https://github.com/brogrizzly/4lotools',
+  },
+  {
+    name: '4LO-tools',
+    href: 'https://github.com/brogrizzly/4LO-tools',
+  },
+]
+
 const creativeInfluences = [
   {
     name: 'KRS-One / Boogie Down Productions',
@@ -96,6 +115,7 @@ function App() {
           <a href="#how-this-works">How This Works</a>
           <a href="#services">Services</a>
           <a href="#garden-pictures">Garden Pictures</a>
+          <a href="#projects">Projects</a>
           <a href="#influences">Influences</a>
           <a href="#boundaries">Boundaries</a>
           <a href="#contact">Contact</a>
@@ -232,6 +252,28 @@ function App() {
                 <img src={item.image} alt={item.alt} />
                 <h3>{item.title}</h3>
               </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="projects" aria-labelledby="projects-heading">
+          <div className="section-heading">
+            <p className="eyebrow">Morgan S. Company / Software</p>
+            <h2 id="projects-heading">Public repositories.</h2>
+          </div>
+          <p className="section-intro">Explore Morgan S. Company's public software projects.</p>
+          <div className="repository-grid">
+            {publicRepositories.map((repository) => (
+              <a
+                className="repository-card"
+                href={repository.href}
+                key={repository.name}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span className="repository-name">{repository.name}</span>
+                <span className="repository-action">View on GitHub ↗</span>
+              </a>
             ))}
           </div>
         </section>
